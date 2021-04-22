@@ -1,24 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="與UFO最好的距離" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZGJ-9S-5pQ">
+                                <rect key="frame" x="220" y="326" width="456" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.48797936339861497" green="0.82791988488399626" blue="0.63919266465885927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="moveSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ejv-fz-stW"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="地球" translatesAutoresizingMaskIntoConstraints="NO" id="Br1-Et-SOd">
+                                <rect key="frame" x="379" y="139" width="138" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alien" translatesAutoresizingMaskIntoConstraints="NO" id="Ut5-xS-yjD">
+                                <rect key="frame" x="76" y="163" width="72" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="astronaut" translatesAutoresizingMaskIntoConstraints="NO" id="MPl-sF-KbB">
+                                <rect key="frame" x="448" y="151" width="69" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-AS-ig4">
+                                <rect key="frame" x="313" y="110" width="58" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="L5b-Sw-ei4">
+                                <rect key="frame" x="141" y="39" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="A3U-sB-h1z">
+                                <rect key="frame" x="188" y="46" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="6zF-Bo-6R9">
+                                <rect key="frame" x="232" y="53" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid3" translatesAutoresizingMaskIntoConstraints="NO" id="BG7-Zv-sV6">
+                                <rect key="frame" x="210" y="110" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid2" translatesAutoresizingMaskIntoConstraints="NO" id="Y8l-XD-LG7">
+                                <rect key="frame" x="164" y="96" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asteroid4" translatesAutoresizingMaskIntoConstraints="NO" id="f8a-mQ-Snv">
+                                <rect key="frame" x="188" y="167" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="alien" destination="Ut5-xS-yjD" id="Lw3-x0-Rn6"/>
+                        <outlet property="asteroid" destination="L5b-Sw-ei4" id="I3t-61-Xdv"/>
+                        <outlet property="asteroid2" destination="A3U-sB-h1z" id="lhw-L6-7hW"/>
+                        <outlet property="asteroid3" destination="6zF-Bo-6R9" id="7qK-Ga-OqY"/>
+                        <outlet property="astronaut" destination="MPl-sF-KbB" id="KhI-4b-QLC"/>
+                        <outlet property="earth" destination="8bC-Xf-vdC" id="3Xq-qQ-ZFI"/>
+                        <outlet property="purpleAsteroid" destination="BG7-Zv-sV6" id="aF4-Sa-7M3"/>
+                        <outlet property="satellite" destination="U0t-AS-ig4" id="3Gc-jR-LcJ"/>
+                        <outlet property="slider" destination="ZGJ-9S-5pQ" id="BDv-t5-Gnp"/>
+                        <outlet property="threeAsteroids" destination="f8a-mQ-Snv" id="M6l-Wo-6zv"/>
+                        <outlet property="yellowAsteroid" destination="Y8l-XD-LG7" id="LWF-A2-h7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-45.535714285714285" y="-247.82608695652175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="alien" width="512" height="512"/>
+        <image name="asteroid" width="512" height="512"/>
+        <image name="asteroid2" width="512" height="512"/>
+        <image name="asteroid3" width="512" height="512"/>
+        <image name="asteroid4" width="512" height="512"/>
+        <image name="astronaut" width="512" height="512"/>
+        <image name="satellite" width="512" height="512"/>
+        <image name="地球" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
